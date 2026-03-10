@@ -1,130 +1,34 @@
-# 🧠 AI Study Buddy
+# MindMate AI Web
 
-AI Study Buddy is an intelligent web application designed to help engineering students understand academic topics quickly using AI. The platform generates simplified explanations, beginner-friendly summaries, and Kannada explanations for better accessibility.
+MindMate AI Web is a full-stack, AI-powered educational assistant application. It leverages Google's advanced Generative AI (Gemini 2.5 Flash) to help users process, learn, and interact with the contents of PDF documents. 
 
-This project was developed during a **24-hour hackathon** under the **AI domain** at **Rajeev Institute of Technology, Hassan**.
+## 🚀 Features
 
----
+* **PDF Summarization**: Upload any document and get concise, highly readable summaries instantly.
+* **Interactive AI Chat**: Ask questions directly about the uploaded PDF's content, and the AI will scan the text and provide accurate answers.
+* **Automated Quiz Generation**: Test your knowledge! Generating interactive quizzes based directly on the contents of your studied material.
 
-## 🚀 Problem Statement
+## 💻 Tech Stack
 
-Many engineering students struggle to understand complex subjects due to:
+**Frontend:**
+* React 18 & Vite
+* Tailwind CSS
+* React Router DOM & Axios
 
-* Difficult technical explanations
-* Language barriers
-* Lack of personalized study tools
+**Backend:**
+* Python 3.13 & FastAPI (Uvicorn)
+* Google Generative AI (gemini-2.5-flash)
+* PyPDF2 (PDF text extraction)
 
-AI Study Buddy solves this by using AI to generate **clear explanations, simplified learning content, and regional language support**.
+## 🛠️ Setup Instructions
 
----
+### Backend Setup
+1. Navigate to `backend/`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Add a `.env` file with `GOOGLE_API_KEY=your_key`
+4. Run server: `python main.py`
 
-## 💡 Key Features
-
-* 📘 **AI Topic Explanation** – Get clear explanations of any academic topic
-* 🧠 **Beginner Mode** – Simplified explanations for beginners
-* 🌐 **Kannada Mode** – Learn concepts in Kannada for better understanding
-* ⚡ **Instant AI Responses** – Fast and accurate topic explanations
-* 🎯 **Student Friendly UI** – Simple interface for quick learning
-
----
-
-## 🛠 Tech Stack
-
-### Frontend
-
-* React.js
-* JavaScript
-* CSS / Tailwind (optional)
-
-### Backend
-
-* Node.js
-* Express.js
-
-### AI Integration
-
-* OpenAI API (GPT-4o-mini) or Gemini API
-
-### Other Tools
-
-* Axios
-* Dotenv
-* CORS
-
----
-
-## 🏗 Project Architecture
-
-Frontend (React)
-⬇
-Backend API (Node.js + Express)
-⬇
-AI Model (OpenAI API/ Gemini API)
-
----
-
-## 📂 Project Structure
-
-```
-ai-study-buddy
-│
-├── backend
-│   ├── server.js
-│   ├── routes
-│   │   └── aiRoutes.js
-│   ├── controllers
-│   │   └── aiController.js
-│   └── .env
-│
-├── frontend
-│   └── src
-│       └── App.js
-│
-└── README.md
-```
-
----
-
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the Repository
-
-```
-git clone https://github.com/shivabalank/Rit_Hackathon.git
-cd ai-study-buddy
-```
-
----
-
-### 2️⃣ Setup Backend
-
-```
-cd backend
-npm install
-```
-
-Create `.env` file:
-
-```
-OPENAI_API_KEY=your_api_key_here
-```
-
-Run backend server:
-
-```
-node server.js
-```
-
----
-
-### 3️⃣ Setup Frontend
-
-Open new terminal:
-
-```
-cd frontend
-npm install
-npm start
-```
-
-Applicatio
+### Frontend Setup
+1. Navigate to `frontend/`
+2. Install dependencies: `npm install`
+3. Run the vite client: `npm run dev`
